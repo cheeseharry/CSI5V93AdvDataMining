@@ -6,6 +6,7 @@ def: "The distribution of mitochondria, including the mitochondrial genome, into
 synonym: "mitochondrial inheritance" EXACT []
 is_a: GO:0048308 ! organelle inheritance
 is_a: GO:0048311 ! mitochondrion distribution
+is_a: GO:0045282 ! mitochondrion distribution  # TEST Not Same Ontology! Should NOT ADD!
 
 [Term]
 id: GO:0000002
@@ -30,4 +31,37 @@ subset: goslim_plant
 synonym: "reproductive physiological process" EXACT []
 xref: Wikipedia:Reproduction
 is_a: GO:0008150 ! biological_process
+is_a: GO:0000018 ! biological_process  # TEST BOTH IN BP SET, SEE IF ADD parent success?
 disjoint_from: GO:0044848 ! biological phase
+
+[Term]
+id: GO:0000018
+name: regulation of DNA recombination
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of DNA recombination, a DNA metabolic process in which a new genotype is formed by reassortment of genes resulting in gene combinations different from those that were present in the parents." [GOC:go_curators, ISBN:0198506732]
+is_a: GO:0051052 ! regulation of DNA metabolic process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0006310 ! DNA recombination
+relationship: regulates GO:0006310 ! DNA recombination
+
+[Term]
+id: GO:0045282
+name: plasma membrane succinate dehydrogenase complex
+namespace: cellular_component
+def: "A multimeric complex which consists of flavoprotein (subunit A ; InterPro:IPR003952), iron-sulfur protein (subunit B) and membrane-bound cytochrome b560 (subunit C; InterPro:IPR000701). In some Archaea, the membrane-bound subunits (C or C and D) do not necessarily contain heme. Membrane-bound subunits can bind/react with quinones. Examples of this component are found in Bacterial species." [GOC:kd, GOC:mtg_sensu, InterPro:IPR000701]
+synonym: "succinate dehydrogenase complex" BROAD []
+is_a: GO:0045281 ! succinate dehydrogenase complex
+is_a: GO:0098797 ! plasma membrane protein complex
+intersection_of: GO:0045281 ! succinate dehydrogenase complex
+intersection_of: part_of GO:0005886 ! plasma membrane
+relationship: part_of GO:0045274 ! plasma membrane respiratory chain complex II
+
+[Term]
+id: GO:0045305
+name: obsolete regulator of establishment of competence for transformation activity
+namespace: molecular_function
+def: "OBSOLETE. Functions to either promote or inhibit the establishment of competence for transformation." [GOC:mlg]
+comment: This term was made obsolete because it does not represent a true function.
+synonym: "regulator of establishment of competence for transformation activity" EXACT []
+is_obsolete: true  # TEST REMOVE (OK)
+replaced_by: GO:0045304
