@@ -7,7 +7,8 @@ CC = set()  # cellular_component
 term_info_List = []
 
 
-# construct term
+# First Scan
+# Construct term
 def construct_term(term_line):
     term_id = ""
     namespace = ""
@@ -31,23 +32,10 @@ def construct_term(term_line):
             if namespace.startswith("cellular_component"):
                 CC.add(term_id)
                 pass
-
-        if line.startswith("intersection_of: part_of"):
-            pt = line[25:35]
-            if pt in BP:  # add parent only when in the same ontology
-                parent.append(pt)
-            pass
-        if line.startswith("relationship: part_of"):
-            pass
-
-        if line.startswith("is_a:"):
-            pass
-
-    term_info = {"id": term_id, "namespace": namespace, "parent": parent, "child": child}
-    return term_info
     pass
 
 
+# Second Scan
 # add parent child relationship
 def add_parent_child(term_line):
     child_id = ""
@@ -85,8 +73,9 @@ def add_parent_child(term_line):
             if parent_id in CC and CC_Flag:  # add parent only when in the same ontology
                 parent_list.append(parent_id)
             pass
+
         if line.startswith("relationship: part_of"):
-            parent_id = line[25:]
+            parent_id = line[22:32]
             if parent_id in BP and BP_Flag:  # add parent only when in the same ontology
                 parent_list.append(parent_id)
             if parent_id in MF and MF_Flag:  # add parent only when in the same ontology
@@ -96,7 +85,7 @@ def add_parent_child(term_line):
             pass
 
         if line.startswith("is_a:"):
-            parent_id = line[25:]
+            parent_id = line[6:16]
             if parent_id in BP and BP_Flag:  # add parent only when in the same ontology
                 parent_list.append(parent_id)
             if parent_id in MF and MF_Flag:  # add parent only when in the same ontology
@@ -109,19 +98,31 @@ def add_parent_child(term_line):
     return term_info
 
 
-file = open("small.txt")
-fileStr = file.read()
-termBlock = fileStr.split("[Term]")
+def read_input():
+    file = open("small.obo")
+    fileStr = file.read()
+    termBlock = fileStr.split("[Term]")
 
-for termStr in termBlock:
-    if termStr.__contains__("is_obsolete: true"):  # remove obsolete term
-        continue
-    term_line = termStr.splitlines()
-    construct_term(term_line)
-    #construct_term(termStr)
-    #print(termStr)
+    for termStr in termBlock:
+        if termStr.__contains__("is_obsolete: true"):  # remove obsolete term
+            continue
+        term_line = termStr.splitlines()
+        construct_term(term_line)
+        pass
+
+    for termStr in termBlock:
+        if termStr.__contains__("is_obsolete: true"):  # remove obsolete term
+            continue
+        term_line = termStr.splitlines()
+        if term_line:  # remove empty list []
+            term_info = add_parent_child(term_line)
+            term_info_List.append(term_info)
+            pass
+        pass
+    print(term_info_List)
     pass
-print(len(termBlock))
-temp = ""
 
+
+if __name__ == '__main__':
+    read_input()
 

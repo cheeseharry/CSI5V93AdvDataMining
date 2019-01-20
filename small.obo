@@ -6,7 +6,7 @@ def: "The distribution of mitochondria, including the mitochondrial genome, into
 synonym: "mitochondrial inheritance" EXACT []
 is_a: GO:0048308 ! organelle inheritance
 is_a: GO:0048311 ! mitochondrion distribution
-is_a: GO:0045282 ! mitochondrion distribution  # TEST Not Same Ontology! Should NOT ADD!
+is_a: GO:0045282 ! mitochondrion distribution  # TEST Not Same Ontology! Should NOT ADD! OKOKOKOK!
 
 [Term]
 id: GO:0000002
@@ -31,7 +31,7 @@ subset: goslim_plant
 synonym: "reproductive physiological process" EXACT []
 xref: Wikipedia:Reproduction
 is_a: GO:0008150 ! biological_process
-is_a: GO:0000018 ! biological_process  # TEST BOTH IN BP SET, SEE IF ADD parent success?
+is_a: GO:0000018 ! biological_process  # TEST BOTH IN BP SET, SEE IF ADD parent success?  OKOKOK!
 disjoint_from: GO:0044848 ! biological phase
 
 [Term]
