@@ -1,0 +1,12 @@
+BP Size: 29692
+MF Size: 11111
+CC Size: 4206
+BP Root: ['GO:0008150']
+MF Root: ['GO:0003674']
+CC Root: ['GO:0005575']
+BP Leaf Size: 13627
+MF Leaf Size: 9066
+CC Leaf Size: 2751
+BP_longest_shortest_path_len: 12
+MF_longest_shortest_path_len: 12
+CC_longest_shortest_path_len: 10
