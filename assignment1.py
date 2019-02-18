@@ -24,6 +24,8 @@ BP_Graph = nx.DiGraph()
 MF_Graph = nx.DiGraph()
 CC_Graph = nx.DiGraph()
 
+GOA_info_list = []
+
 
 # Create DAG
 # para: term_info_list[]
@@ -272,11 +274,43 @@ def read_input():
     pass
 
 
+# read input and initialize graph
+def read_GOA():
+    inputFile = open("goa_human_small.gaf")
+    for line in inputFile.readlines():
+        line = line.split()
+        if line.__contains__("IEA"):
+            continue
+            pass
+        if line.__contains__("NOT"):
+            continue
+            pass
+
+        gene = line[2]
+        go_term = line[3]
+        ontology = line[6]  # P C F
+        namespace = ""
+        if ontology == "P":  ## add BP
+            namespace = "biological_process"
+            GOA_info = {"gene": gene, "go_term": go_term, "namespace": namespace}
+            GOA_info_list.append(GOA_info)
+            pass
+        if ontology == "F":  ## add MF
+            namespace = "molecular_function"
+            GOA_info = {"gene": gene, "go_term": go_term, "namespace": namespace}
+            GOA_info_list.append(GOA_info)
+            pass
+
+        pass
+
+
 if __name__ == '__main__':
-    read_input()
+    #read_input()
+    read_GOA()
     #print(term_info_List)
     #print(BP)
     #print(BP_parent)
+    '''''''''
     print("BP Size: " + str(len(BP)))
     print("MF Size: " + str(len(MF)))
     print("CC Size: " + str(len(CC)))
@@ -308,4 +342,6 @@ if __name__ == '__main__':
     print("CC_longest_shortest_path_len: " + str(CC_longest_shortest_path_len[0]))
 
     #print(BP_Graph.number_of_edges())
+    '''
+
 

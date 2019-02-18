@@ -1,0 +1,305 @@
+UniProtKB	A0A024R161	DNAJC25-GNG10		GO:0003924	GO_REF:0000002	IEA	InterPro:IPR001770	F	Guanine nucleotide-binding protein subunit gamma	DNAJC25-GNG10|hCG_1994888	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A024R161	DNAJC25-GNG10		GO:0007186	GO_REF:0000002	IEA	InterPro:IPR001770|InterPro:IPR015898|InterPro:IPR036284	P	Guanine nucleotide-binding protein subunit gamma	DNAJC25-GNG10|hCG_1994888	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A024RBG1	NUDT4B		GO:0003723	GO_REF:0000037	IEA	UniProtKB-KW:KW-0694	F	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B	NUDT4B	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A024RBG1	NUDT4B		GO:0005829	GO_REF:0000052	IDA		C	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B	NUDT4B	protein	taxon:9606	20161204	HPA		
+UniProtKB	A0A024RBG1	NUDT4B		GO:0008486	GO_REF:0000003	IEA	EC:3.6.1.52	F	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B	NUDT4B	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A024RBG1	NUDT4B		GO:0046872	GO_REF:0000037	IEA	UniProtKB-KW:KW-0479	F	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B	NUDT4B	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A024RBG1	NUDT4B		GO:0052840	GO_REF:0000003	IEA	EC:3.6.1.52	F	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B	NUDT4B	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A024RBG1	NUDT4B		GO:0052842	GO_REF:0000003	IEA	EC:3.6.1.52	F	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B	NUDT4B	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6H9	IGLV4-69		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin lambda variable 4-69	IGLV4-69	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6H9	IGLV4-69		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin lambda variable 4-69	IGLV4-69	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6H9	IGLV4-69		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin lambda variable 4-69	IGLV4-69	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6I0	IGLV8-61		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin lambda variable 8-61	IGLV8-61	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6I0	IGLV8-61		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin lambda variable 8-61	IGLV8-61	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6I0	IGLV8-61		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin lambda variable 8-61	IGLV8-61	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6I1	IGLV4-60		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin lambda variable 4-60	IGLV4-60	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6I1	IGLV4-60		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin lambda variable 4-60	IGLV4-60	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6I1	IGLV4-60		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin lambda variable 4-60	IGLV4-60	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6I4	IGLV10-54		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin lambda variable 10-54	IGLV10-54	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6I4	IGLV10-54		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin lambda variable 10-54	IGLV10-54	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6I4	IGLV10-54		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin lambda variable 10-54	IGLV10-54	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6I9	IGLV7-46		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin lambda variable 7-46	IGLV7-46	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6I9	IGLV7-46		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin lambda variable 7-46	IGLV7-46	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6I9	IGLV7-46		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin lambda variable 7-46	IGLV7-46	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6J1	IGLV5-37		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin lambda variable 5-37	IGLV5-37	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6J1	IGLV5-37		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin lambda variable 5-37	IGLV5-37	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6J1	IGLV5-37		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin lambda variable 5-37	IGLV5-37	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6J6	IGLV3-22		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin lambda variable 3-22	IGLV3-22	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6J6	IGLV3-22		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin lambda variable 3-22	IGLV3-22	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6J6	IGLV3-22		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin lambda variable 3-22	IGLV3-22	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6J9	IGLV2-18		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin lambda variable 2-18	IGLV2-18	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6J9	IGLV2-18		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin lambda variable 2-18	IGLV2-18	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6J9	IGLV2-18		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin lambda variable 2-18	IGLV2-18	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6K0	IGLV3-16		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin lambda variable 3-16	IGLV3-16	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6K0	IGLV3-16		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin lambda variable 3-16	IGLV3-16	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6K0	IGLV3-16		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin lambda variable 3-16	IGLV3-16	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6K2	IGLV3-12		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin lambda variable 3-12	IGLV3-12	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6K2	IGLV3-12		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin lambda variable 3-12	IGLV3-12	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6K2	IGLV3-12		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin lambda variable 3-12	IGLV3-12	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6K4	IGLV3-10		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin lambda variable 3-10	IGLV3-10	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6K4	IGLV3-10		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin lambda variable 3-10	IGLV3-10	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6K4	IGLV3-10		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin lambda variable 3-10	IGLV3-10	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6K5	IGLV3-9		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin lambda variable 3-9	IGLV3-9	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6K5	IGLV3-9		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin lambda variable 3-9	IGLV3-9	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6K5	IGLV3-9		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin lambda variable 3-9	IGLV3-9	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6K6	IGLV4-3		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin lambda variable 4-3	IGLV4-3	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6K6	IGLV4-3		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin lambda variable 4-3	IGLV4-3	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6K6	IGLV4-3		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin lambda variable 4-3	IGLV4-3	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6N1	TRBV19		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor beta variable 19	TRBV19	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6N1	TRBV19		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor beta variable 19	TRBV19	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6N2	TRBV20-1		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor beta variable 20-1	TRBV20-1	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6N2	TRBV20-1		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor beta variable 20-1	TRBV20-1	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6N3	TRBV24-1		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor beta variable 24-1	TRBV24-1	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6N3	TRBV24-1		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor beta variable 24-1	TRBV24-1	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6N4	TRBV25-1		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor beta variable 25-1	TRBV25-1	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6N4	TRBV25-1		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor beta variable 25-1	TRBV25-1	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0004252	Reactome:R-HSA-166753	TAS		F	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20160118	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0004252	Reactome:R-HSA-166792	TAS		F	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20160118	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-166753	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-166792	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-173626	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-173631	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-1861621	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-199161	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2029268	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2029270	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2029271	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2029272	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2029273	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2029451	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2029452	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2029453	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2029455	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2029457	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2029458	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2029459	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2029467	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2029476	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2197697	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2203516	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2454192	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2454208	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2454240	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2730833	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2730843	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2730851	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2730882	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2730884	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-2730886	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-8852266	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-8852481	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-8858428	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005576	Reactome:R-HSA-9021306	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005886	Reactome:R-HSA-1112666	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005886	Reactome:R-HSA-5690701	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005886	Reactome:R-HSA-5690702	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005886	Reactome:R-HSA-5690740	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005886	Reactome:R-HSA-9606151	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005886	Reactome:R-HSA-983696	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005886	Reactome:R-HSA-983700	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005886	Reactome:R-HSA-983703	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0005886	Reactome:R-HSA-983707	TAS		C	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0006508	GO_REF:0000108	IEA	GO:0004252	P	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20181201	GOC		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0006898	Reactome:R-HSA-2173782	TAS		P	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20180822	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0006956	Reactome:R-HSA-166663	TAS		P	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20180823	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0006958	Reactome:R-HSA-173623	TAS		P	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20180823	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0030449	Reactome:R-HSA-977606	TAS		P	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20180823	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0038095	Reactome:R-HSA-2454202	TAS		P	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20180822	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0038096	Reactome:R-HSA-2029480	TAS		P	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20180823	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0050776	Reactome:R-HSA-198933	TAS		P	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20150901	Reactome		
+UniProtKB	A0A075B6P5	IGKV2-28		GO:0050900	Reactome:R-HSA-202733	TAS		P	Immunoglobulin kappa variable 2-28	IGKV2-28	protein	taxon:9606	20180822	Reactome		
+UniProtKB	A0A075B6S2	IGKV2D-29		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin kappa variable 2D-29	IGKV2D-29	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6S2	IGKV2D-29		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin kappa variable 2D-29	IGKV2D-29	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6S2	IGKV2D-29		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin kappa variable 2D-29	IGKV2D-29	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6S4	IGKV1D-17		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin kappa variable 1D-17	IGKV1D-17	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6S4	IGKV1D-17		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin kappa variable 1D-17	IGKV1D-17	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6S4	IGKV1D-17		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin kappa variable 1D-17	IGKV1D-17	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6S5	IGKV1-27		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin kappa variable 1-27	IGKV1-27	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6S5	IGKV1-27		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin kappa variable 1-27	IGKV1-27	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6S5	IGKV1-27		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin kappa variable 1-27	IGKV1-27	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0004252	Reactome:R-HSA-166753	TAS		F	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20160118	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0004252	Reactome:R-HSA-166792	TAS		F	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20160118	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-166753	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-166792	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-173626	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-173631	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-1861621	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-199161	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2029268	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2029270	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2029271	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2029272	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2029273	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2029451	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2029452	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2029453	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2029455	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2029457	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2029458	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2029459	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2029467	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2029476	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2197697	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2203516	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2454192	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2454208	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2454240	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2730833	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2730843	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2730851	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2730882	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2730884	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-2730886	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-8852266	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-8852481	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-8858428	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005576	Reactome:R-HSA-9021306	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005886	Reactome:R-HSA-1112666	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005886	Reactome:R-HSA-5690701	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005886	Reactome:R-HSA-5690702	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005886	Reactome:R-HSA-5690740	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005886	Reactome:R-HSA-9606151	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005886	Reactome:R-HSA-983696	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005886	Reactome:R-HSA-983700	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005886	Reactome:R-HSA-983703	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0005886	Reactome:R-HSA-983707	TAS		C	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20161111	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0006508	GO_REF:0000108	IEA	GO:0004252	P	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20181201	GOC		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0006898	Reactome:R-HSA-2173782	TAS		P	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20180822	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0006956	Reactome:R-HSA-166663	TAS		P	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20180823	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0006958	Reactome:R-HSA-173623	TAS		P	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20180823	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0030449	Reactome:R-HSA-977606	TAS		P	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20180823	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0038095	Reactome:R-HSA-2454202	TAS		P	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20180822	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0038096	Reactome:R-HSA-2029480	TAS		P	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20180823	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0050776	Reactome:R-HSA-198933	TAS		P	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20150901	Reactome		
+UniProtKB	A0A075B6S6	IGKV2D-30		GO:0050900	Reactome:R-HSA-202733	TAS		P	Immunoglobulin kappa variable 2D-30	IGKV2D-30	protein	taxon:9606	20180822	Reactome		
+UniProtKB	A0A075B6T6	TRAV12-2		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor alpha variable 12-2	TRAV12-2	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6T6	TRAV12-2		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor alpha variable 12-2	TRAV12-2	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6T7	TRAV6		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor alpha variable 6	TRAV6|TCRAV5S1	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6T7	TRAV6		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor alpha variable 6	TRAV6|TCRAV5S1	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6T8	TRAV9-1		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor alpha variable 9-1	TRAV9-1	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6T8	TRAV9-1		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor alpha variable 9-1	TRAV9-1	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6U4	TRAV7		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor alpha variable 7	TRAV7	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6U4	TRAV7		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor alpha variable 7	TRAV7	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6V5	TRAV36DV7		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor alpha variable 36/delta variable 7	TRAV36DV7	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6V5	TRAV36DV7		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor alpha variable 36/delta variable 7	TRAV36DV7	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6W5	TRAV23DV6		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor alpha variable 23/delta variable 6	TRAV23DV6	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6W5	TRAV23DV6		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor alpha variable 23/delta variable 6	TRAV23DV6	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6X5	TRAV18		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor alpha variable 18	TRAV18	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6X5	TRAV18		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor alpha variable 18	TRAV18	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6Y3	TRAJ3		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor alpha joining 3	TRAJ3	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B6Y3	TRAJ3		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor alpha joining 3	TRAJ3	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B706	TRDJ1		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor delta joining 1	TRDJ1	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B706	TRDJ1		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor delta joining 1	TRDJ1	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B734	LOC100509620		GO:0015267	GO_REF:0000002	IEA	InterPro:IPR000425	F	Uncharacterized protein	LOC100509620	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A075B734	LOC100509620		GO:0016021	GO_REF:0000038	IEA	UniProtKB-KW:KW-0812	C	Uncharacterized protein	LOC100509620	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B734	LOC100509620		GO:0071918	GO_REF:0000108	IEA	GO:0015204	P	Uncharacterized protein	LOC100509620	protein	taxon:9606	20181201	GOC		
+UniProtKB	A0A075B759	PPIAL4E		GO:0000413	GO_REF:0000002	IEA	InterPro:IPR002130	P	Peptidyl-prolyl cis-trans isomerase A-like 4E	PPIAL4E	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A075B759	PPIAL4E		GO:0005737	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0086	C	Peptidyl-prolyl cis-trans isomerase A-like 4E	PPIAL4E	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A075B767	PPIAL4H		GO:0000413	GO_REF:0000002	IEA	InterPro:IPR002130	P	Peptidyl-prolyl cis-trans isomerase A-like 4H	PPIAL4H	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A075B767	PPIAL4H		GO:0005737	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0086	C	Peptidyl-prolyl cis-trans isomerase A-like 4H	PPIAL4H	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WSX0	IGLV5-45		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin lambda variable 5-45	IGLV5-45	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WSX0	IGLV5-45		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin lambda variable 5-45	IGLV5-45	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WSX0	IGLV5-45		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin lambda variable 5-45	IGLV5-45	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WSY6	IGKV3D-15		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin kappa variable 3D-15	IGKV3D-15	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WSY6	IGKV3D-15		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin kappa variable 3D-15	IGKV3D-15	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WSY6	IGKV3D-15		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin kappa variable 3D-15	IGKV3D-15	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WSZ0	IGKV1D-8		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin kappa variable 1D-8	IGKV1D-8	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WSZ0	IGKV1D-8		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin kappa variable 1D-8	IGKV1D-8	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WSZ0	IGKV1D-8		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin kappa variable 1D-8	IGKV1D-8	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WSZ3	HOXD4		GO:0045944	GO_REF:0000108	IEA	GO:0001228	P	Homeobox protein Hox-D4	HOXD4	protein	taxon:9606	20181201	GOC		
+UniProtKB	A0A087WSZ9	TRAV30		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor alpha variable 30	TRAV30	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WSZ9	TRAV30		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor alpha variable 30	TRAV30	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WT01	TRAV27		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor alpha variable 27	TRAV27	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WT01	TRAV27		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor alpha variable 27	TRAV27	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WT02	TRAV9-2		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor alpha variable 9-2	TRAV9-2	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WT02	TRAV9-2		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor alpha variable 9-2	TRAV9-2	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WT03	TRAV26-1		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor alpha variable 26-1	TRAV26-1	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WT03	TRAV26-1		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor alpha variable 26-1	TRAV26-1	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WTH1	TMEM265		GO:0016021	GO_REF:0000037	IEA	UniProtKB-KW:KW-0812	C	Transmembrane protein 265	TMEM265	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WTH5	KCNE1B		GO:0098915	GO_REF:0000108	IEA	GO:1902282	P	Potassium voltage-gated channel subfamily E member 1B	KCNE1B	protein	taxon:9606	20181201	GOC		
+UniProtKB	A0A087WTJ2	GIMAP1-GIMAP5		GO:0005783	GO_REF:0000052	IDA		C	GIMAP1-GIMAP5 readthrough	GIMAP1-GIMAP5	protein	taxon:9606	20161204	HPA		
+UniProtKB	A0A087WTJ2	GIMAP1-GIMAP5		GO:0016021	GO_REF:0000038	IEA	UniProtKB-KW:KW-0812	C	GIMAP1-GIMAP5 readthrough	GIMAP1-GIMAP5	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WUJ7	A0A087WUJ7		GO:0004553	GO_REF:0000002	IEA	InterPro:IPR015883	F	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WUJ7	A0A087WUJ7		GO:0005975	GO_REF:0000002	IEA	InterPro:IPR015883	P	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WUL8	NBPF19		GO:0005737	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0086	C	Neuroblastoma breakpoint family member 19	NBPF19	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WUU8	A0A087WUU8		GO:0003676	GO_REF:0000002	IEA	InterPro:IPR001909|InterPro:IPR013087|InterPro:IPR036051	F	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WUU8	A0A087WUU8		GO:0006355	GO_REF:0000002	IEA	InterPro:IPR001909|InterPro:IPR036051	P	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WUU8	A0A087WUU8		GO:0046872	GO_REF:0000038	IEA	UniProtKB-KW:KW-0479	F	Uncharacterized protein		protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WUV0	A0A087WUV0		GO:0003676	GO_REF:0000002	IEA	InterPro:IPR001909|InterPro:IPR013087	F	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WUV0	A0A087WUV0		GO:0006355	GO_REF:0000002	IEA	InterPro:IPR001909	P	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WUV0	A0A087WUV0		GO:0046872	GO_REF:0000038	IEA	UniProtKB-KW:KW-0479	F	Uncharacterized protein		protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WV62	TRBV16		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor beta variable 16	TRBV16	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WV62	TRBV16		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor beta variable 16	TRBV16	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WVF3	TBC1D3D		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	TBC1 domain family member 3D	TBC1D3D	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WW87	IGKV2-40		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	Immunoglobulin kappa variable 2-40	IGKV2-40	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WW87	IGKV2-40		GO:0003823	GO_REF:0000037	IEA	UniProtKB-KW:KW-0394	F	Immunoglobulin kappa variable 2-40	IGKV2-40	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WW87	IGKV2-40		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin kappa variable 2-40	IGKV2-40	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WWV3	A0A087WWV3		GO:0005634	GO_REF:0000052	IDA		C	Uncharacterized protein		protein	taxon:9606	20151016	HPA		
+UniProtKB	A0A087WWV3	A0A087WWV3		GO:0005730	GO_REF:0000052	IDA		C	Uncharacterized protein		protein	taxon:9606	20151016	HPA		
+UniProtKB	A0A087WWV3	A0A087WWV3		GO:0005739	GO_REF:0000052	IDA		C	Uncharacterized protein		protein	taxon:9606	20151016	HPA		
+UniProtKB	A0A087WWV3	A0A087WWV3		GO:0005829	GO_REF:0000052	IDA		C	Uncharacterized protein		protein	taxon:9606	20151016	HPA		
+UniProtKB	A0A087WWV3	A0A087WWV3		GO:0071897	GO_REF:0000108	IEA	GO:0003887	P	Uncharacterized protein		protein	taxon:9606	20181201	GOC		
+UniProtKB	A0A087WX78	ELOA3C		GO:0006357	GO_REF:0000002	IEA	InterPro:IPR010684	P	Putative elongin-A3 member C	ELOA3C	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WX78	ELOA3C		GO:0070449	GO_REF:0000002	IEA	InterPro:IPR010684	C	Putative elongin-A3 member C	ELOA3C	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WXM9	MEIKIN		GO:0000777	GO_REF:0000024	ISS	UniProtKB:Q5F2C3	C	Meiosis-specific kinetochore protein	MEIKIN	protein	taxon:9606	20150223	UniProt		
+UniProtKB	A0A087WXM9	MEIKIN		GO:0000780	GO_REF:0000024	ISS	UniProtKB:Q5F2C3	C	Meiosis-specific kinetochore protein	MEIKIN	protein	taxon:9606	20150223	UniProt		
+UniProtKB	A0A087WXM9	MEIKIN		GO:0007060	GO_REF:0000024	ISS	UniProtKB:Q5F2C3	P	Meiosis-specific kinetochore protein	MEIKIN	protein	taxon:9606	20150223	UniProt		
+UniProtKB	A0A087WXM9	MEIKIN		GO:0010789	GO_REF:0000024	ISS	UniProtKB:Q5F2C3	P	Meiosis-specific kinetochore protein	MEIKIN	protein	taxon:9606	20150223	UniProt		
+UniProtKB	A0A087WXM9	MEIKIN		GO:0016321	GO_REF:0000024	ISS	UniProtKB:Q5F2C3	P	Meiosis-specific kinetochore protein	MEIKIN	protein	taxon:9606	20150223	UniProt		
+UniProtKB	A0A087WXM9	MEIKIN		GO:0045143	GO_REF:0000024	ISS	UniProtKB:Q5F2C3	P	Meiosis-specific kinetochore protein	MEIKIN	protein	taxon:9606	20150223	UniProt		
+UniProtKB	A0A087WXM9	MEIKIN		GO:0051754	GO_REF:0000024	ISS	UniProtKB:Q5F2C3	P	Meiosis-specific kinetochore protein	MEIKIN	protein	taxon:9606	20150223	UniProt		
+UniProtKB	A0A087WXS9	TBC1D3I		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	TBC1 domain family member 3I	TBC1D3I	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WYN8	A0A087WYN8		GO:0005829	GO_REF:0000002	IEA	InterPro:IPR029914	C	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WYN8	A0A087WYN8		GO:0006595	GO_REF:0000002	IEA	InterPro:IPR029914	P	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WYN8	A0A087WYN8		GO:0043086	GO_REF:0000002	IEA	InterPro:IPR029914	P	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WYV9	SYNJ2BP-COX16		GO:0031966	GO_REF:0000002	IEA	InterPro:IPR020164	C	SYNJ2BP-COX16 readthrough	SYNJ2BP-COX16	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WZ62	A0A087WZ62		GO:0005789	GO_REF:0000040	IEA	UniProtKB-SubCell:SL-0097	C	Mannosyltransferase		protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WZ62	A0A087WZ62		GO:0016021	GO_REF:0000038	IEA	UniProtKB-KW:KW-0812	C	Mannosyltransferase		protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WZ62	A0A087WZ62		GO:0097502	GO_REF:0000108	IEA	GO:0000030	P	Mannosyltransferase		protein	taxon:9606	20181201	GOC		
+UniProtKB	A0A087WZ82	FXYD6-FXYD2		GO:0006811	GO_REF:0000038	IEA	UniProtKB-KW:KW-0406	P	FXYD domain-containing ion transport regulator	FXYD6-FXYD2	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WZ82	FXYD6-FXYD2		GO:0016021	GO_REF:0000038	IEA	UniProtKB-KW:KW-0812	C	FXYD domain-containing ion transport regulator	FXYD6-FXYD2	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WZ82	FXYD6-FXYD2		GO:0099106	GO_REF:0000002	IEA	InterPro:IPR000272	F	FXYD domain-containing ion transport regulator	FXYD6-FXYD2	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WZG4	ARHGEF18		GO:0003676	GO_REF:0000002	IEA	InterPro:IPR013087	F	Rho guanine nucleotide exchange factor 18	ARHGEF18	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WZG4	ARHGEF18		GO:0005089	GO_REF:0000002	IEA	InterPro:IPR000219	F	Rho guanine nucleotide exchange factor 18	ARHGEF18	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WZG4	ARHGEF18		GO:0005829	GO_REF:0000052	IDA		C	Rho guanine nucleotide exchange factor 18	ARHGEF18	protein	taxon:9606	20161204	HPA		
+UniProtKB	A0A087WZG4	ARHGEF18		GO:0005886	GO_REF:0000052	IDA		C	Rho guanine nucleotide exchange factor 18	ARHGEF18	protein	taxon:9606	20161204	HPA		
+UniProtKB	A0A087WZG4	ARHGEF18		GO:0007264	GO_REF:0000002	IEA	InterPro:IPR037744	P	Rho guanine nucleotide exchange factor 18	ARHGEF18	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WZG4	ARHGEF18		GO:0035023	GO_REF:0000002	IEA	InterPro:IPR000219	P	Rho guanine nucleotide exchange factor 18	ARHGEF18	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087WZV9	A0A087WZV9		GO:0000049	GO_REF:0000038	IEA	UniProtKB-KW:KW-0820	F	D-aminoacyl-tRNA deacylase		protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WZV9	A0A087WZV9		GO:0005730	GO_REF:0000052	IDA		C	D-aminoacyl-tRNA deacylase		protein	taxon:9606	20101115	HPA		
+UniProtKB	A0A087WZV9	A0A087WZV9		GO:0005829	GO_REF:0000052	IDA		C	D-aminoacyl-tRNA deacylase		protein	taxon:9606	20101115	HPA		
+UniProtKB	A0A087WZV9	A0A087WZV9		GO:0016021	GO_REF:0000038	IEA	UniProtKB-KW:KW-0812	C	D-aminoacyl-tRNA deacylase		protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WZV9	A0A087WZV9		GO:0051500	GO_REF:0000104	IEA	UniRule:UR000000476	F	D-aminoacyl-tRNA deacylase		protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087WZV9	A0A087WZV9		GO:0106074	GO_REF:0000108	IEA	GO:0051499	P	D-aminoacyl-tRNA deacylase		protein	taxon:9606	20181201	GOC		
+UniProtKB	A0A087WZV9	A0A087WZV9		GO:0106074	GO_REF:0000108	IEA	GO:0051500	P	D-aminoacyl-tRNA deacylase		protein	taxon:9606	20181201	GOC		
+UniProtKB	A0A087X002	A0A087X002		GO:0005509	GO_REF:0000002	IEA	InterPro:IPR001881|InterPro:IPR018097	F	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087X0B3	A0A087X0B3		GO:0005506	GO_REF:0000002	IEA	InterPro:IPR001128|InterPro:IPR002401|InterPro:IPR036396	F	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087X0M5	TRBV18		GO:0002250	GO_REF:0000037	IEA	UniProtKB-KW:KW-1064	P	T cell receptor beta variable 18	TRBV18	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087X0M5	TRBV18		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	T cell receptor beta variable 18	TRBV18	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087X0R7	SENP3-EIF4A1		GO:0008234	GO_REF:0000002	IEA	InterPro:IPR003653|InterPro:IPR037945	F	SENP3-EIF4A1 readthrough (NMD candidate)	SENP3-EIF4A1	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087X0R7	SENP3-EIF4A1		GO:0071339	GO_REF:0000002	IEA	InterPro:IPR037945	C	SENP3-EIF4A1 readthrough (NMD candidate)	SENP3-EIF4A1	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087X179	TBC1D3E		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	TBC1 domain family member 3E	TBC1D3E	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087X1B8	A0A087X1B8		GO:0006633	GO_REF:0000002	IEA	InterPro:IPR007956|InterPro:IPR038917	P	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087X1B8	A0A087X1B8		GO:0050080	GO_REF:0000002	IEA	InterPro:IPR007956|InterPro:IPR038917	F	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087X1C1	TMSB15B		GO:0007015	GO_REF:0000002	IEA	InterPro:IPR001152	P	Thymosin beta-15B	TMSB15B	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087X1C5	CYP2D7		GO:0005506	GO_REF:0000002	IEA	InterPro:IPR001128|InterPro:IPR002401|InterPro:IPR008069|InterPro:IPR036396	F	Putative cytochrome P450 2D7	CYP2D7	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087X1C5	CYP2D7		GO:0005737	PMID:15051713	IDA		C	Putative cytochrome P450 2D7	CYP2D7	protein	taxon:9606	20150123	UniProt		
+UniProtKB	A0A087X1C5	CYP2D7		GO:0005739	PMID:18838503	IDA		C	Putative cytochrome P450 2D7	CYP2D7	protein	taxon:9606	20150123	UniProt		
+UniProtKB	A0A087X1C5	CYP2D7		GO:0006805	PMID:15051713	IDA		P	Putative cytochrome P450 2D7	CYP2D7	protein	taxon:9606	20150123	UniProt		
+UniProtKB	A0A087X1C5	CYP2D7		GO:0016021	GO_REF:0000037	IEA	UniProtKB-KW:KW-0812	C	Putative cytochrome P450 2D7	CYP2D7	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087X1C5	CYP2D7		GO:0042738	PMID:15051713	IDA		P	Putative cytochrome P450 2D7	CYP2D7	protein	taxon:9606	20150123	UniProt		
+UniProtKB	A0A087X1C5	CYP2D7		GO:0070330	PMID:15051713	IDA		F	Putative cytochrome P450 2D7	CYP2D7	protein	taxon:9606	20150123	UniProt		
+UniProtKB	A0A087X1C5	CYP2D7	NOT	GO:0006805	PMID:18838503	IDA		P	Putative cytochrome P450 2D7	CYP2D7	protein	taxon:9606	20150123	UniProt		
+UniProtKB	A0A087X1C5	CYP2D7	NOT	GO:0042738	PMID:18838503	IDA		P	Putative cytochrome P450 2D7	CYP2D7	protein	taxon:9606	20150123	UniProt		
+UniProtKB	A0A087X1C5	CYP2D7	NOT	GO:0070330	PMID:18838503	IDA		F	Putative cytochrome P450 2D7	CYP2D7	protein	taxon:9606	20150123	UniProt		
+UniProtKB	A0A087X1G2	TBC1D3K		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	TBC1 domain family member 3K	TBC1D3K	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A087X1K6	KLF13		GO:0003676	GO_REF:0000002	IEA	InterPro:IPR013087	F	Krueppel-like factor 13	KLF13	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A087X1L8	LOC102723996		GO:0016021	GO_REF:0000038	IEA	UniProtKB-KW:KW-0812	C	Uncharacterized protein	LOC102723996	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A088AWK7	A0A088AWK7		GO:0003676	GO_REF:0000002	IEA	InterPro:IPR001909|InterPro:IPR036051	F	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A088AWK7	A0A088AWK7		GO:0006355	GO_REF:0000002	IEA	InterPro:IPR001909|InterPro:IPR036051	P	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A096LNG9	A0A096LNG9		GO:0003676	GO_REF:0000002	IEA	InterPro:IPR001427	F	Uncharacterized protein		protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A096LNP1	DEFB131B		GO:0042742	GO_REF:0000037	IEA	UniProtKB-KW:KW-0044	P	Beta-defensin 131B	DEFB131B	protein	taxon:9606	20181201	UniProt		
+UniProtKB	A0A096LNP1	DEFB131B		GO:0045087	GO_REF:0000002	IEA	InterPro:IPR025933	P	Beta-defensin 131B	DEFB131B	protein	taxon:9606	20181201	InterPro		
+UniProtKB	A0A096LP01	SMIM26		GO:0016021	GO_REF:0000037	IEA	UniProtKB-KW:KW-0812	C	Small integral membrane protein 26	SMIM26	protein	taxon:9606	20181201	
