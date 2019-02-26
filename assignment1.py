@@ -304,6 +304,10 @@ def read_GOA():
         pass
 
 
+def annoted_GO():
+    pass
+
+
 if __name__ == '__main__':
     #read_input()
     read_GOA()
