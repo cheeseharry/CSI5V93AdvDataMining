@@ -31,7 +31,15 @@ GOA_info_list = []
 
 Gene_Term_Info_List = []
 
+ground_truth_list = []
 sim_res_list = []  #similirity result list for 5 method
+
+sim1_score = []
+sim2_score = []
+sim3_score = []
+sim4_score = []
+sim5_score = []
+gt_score = []
 
 # Create DAG
 # para: term_info_list[]
@@ -298,7 +306,7 @@ def get_info_content_helper(term1,term2):
 def get_lca_info(term):
     for term_info in term_info_List:
         if term_info.__getitem__("id") == term:
-            return len(term_info.__getitem__("parent"))/(len(Gene_Term_Info_List)+1)
+            return len(term_info.__getitem__("info_content"))/(len(Gene_Term_Info_List)+1)
         pass
     return 0
     pass
@@ -373,11 +381,49 @@ def read_human_protein_complexes():
     pass
 
 
-def get_ground_truth():
+def read_ground_truth():
+    inputFile = open("human_protein_complexes.txt")
+    for line in inputFile.readlines():
+        line = line.split()
+        ground_truth_list.append(line)
+
     pass
 
 
-def evaluate():
+def get_ground_truth(gene0,gene1,term_list0,term_list1):
+    for ground_truth in ground_truth_list:
+        if gene0 in ground_truth and gene1 in ground_truth:
+            return 1
+        pass
+    return 0
+    pass
+
+
+def auc_report():
+    auc_report = open("auc_score.txt", 'w')
+    y_true = np.array(gt_score)
+    y_scores1 = np.array(sim1_score)
+    y_scores2 = np.array(sim2_score)
+    y_scores3 = np.array(sim3_score)
+    y_scores4 = np.array(sim4_score)
+    y_scores5 = np.array(sim5_score)
+
+    print("AUC1 is ", roc_auc_score(y_true, y_scores1))
+    print("AUC2 is ", roc_auc_score(y_true, y_scores2))
+    print("AUC3 is ", roc_auc_score(y_true, y_scores3))
+    print("AUC4 is ", roc_auc_score(y_true, y_scores4))
+    print("AUC5 is ", roc_auc_score(y_true, y_scores5))
+
+    auc_report.write("AUC1 is " + str(roc_auc_score(y_true, y_scores1)))
+    auc_report.write("\n")
+    auc_report.write("AUC2 is " + str(roc_auc_score(y_true, y_scores2)))
+    auc_report.write("\n")
+    auc_report.write("AUC3 is " + str(roc_auc_score(y_true, y_scores3)))
+    auc_report.write("\n")
+    auc_report.write("AUC4 is " + str(roc_auc_score(y_true, y_scores4)))
+    auc_report.write("\n")
+    auc_report.write("AUC5 is " + str(roc_auc_score(y_true, y_scores5)))
+    auc_report.write("\n")
     pass
 
 
@@ -603,7 +649,7 @@ def read_biogrid_human_ppi_cin():
 def print_similarity_reprot():
     report = open("sim_result.txt", 'w')
 
-    inputFile = open("ppi_small.txt")
+    inputFile = open("biogrid_human_ppi_cln.txt")
     for line in inputFile.readlines():
         line = line.split()
         gene0 = line[0]
@@ -624,15 +670,26 @@ def print_similarity_reprot():
         sim4 = 0
         sim5 = 0
         gt = 0 #1 for true, 0 for false
-        #sim1 = best_matching_average(gene0,gene1,term_list0,term_list1)
-        #sim2 = node_base_sim(gene0,gene1,term_list0,term_list1)
-        #sim3 = info_content_sim(gene0,gene1,term_list0,term_list1)
-        #sim4 = integrate_base_sim(gene0,gene1,term_list0,term_list1,sim1,sim2)
+        sim1 = best_matching_average(gene0,gene1,term_list0,term_list1)
+        sim2 = node_base_sim(gene0,gene1,term_list0,term_list1)
+        sim3 = info_content_sim(gene0,gene1,term_list0,term_list1)
+        sim4 = integrate_base_sim(gene0,gene1,term_list0,term_list1,sim1,sim2)
         sim5 = my_method_sim(gene0,gene1,term_list0,term_list1)
         gt = get_ground_truth(gene0,gene1,term_list0,term_list1)
 
-        sim_res_dic = {"sim1": sim1, "sim2": sim2, "sim3": sim3,
+        sim1_score.append(sim1)
+        sim2_score.append(sim2)
+        sim3_score.append(sim3)
+        sim4_score.append(sim4)
+        sim5_score.append(sim5)
+        gt_score.append(gt)
+
+        '''
+        sim_res_dict = {"sim1": sim1, "sim2": sim2, "sim3": sim3,
                        "sim4": sim4, "sim5": sim5, "gt": gt}
+
+        sim_res_list.append(sim_res_dict)
+        '''
         report.write(gene0 + " " + gene1 + " " + str(sim1) + " " + str(sim2) + " "
                      + str(sim3) + " " + str(sim4) + " " + str(sim5) + " " + str(gt))
         report.write("\n")
@@ -642,7 +699,7 @@ def print_similarity_reprot():
 
 
 if __name__ == '__main__':
-    #read_input()
+    read_ground_truth()
 
     read_biogrid_human_ppi_cin()
     read_GOA_human()
@@ -650,7 +707,7 @@ if __name__ == '__main__':
 
     print_similarity_reprot()
 
-    #print(Gene_Term_Info_List)
+    auc_report()
 
     #print(term_info_List)
     #print(BP)
