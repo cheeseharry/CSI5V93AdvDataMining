@@ -22,18 +22,15 @@ term_info_List = []
 
 BP_Graph = nx.DiGraph()
 MF_Graph = nx.DiGraph()
-CC_Graph = nx.DiGraph()
+
 
 GOA_info_list = []
 
+Gene_term_list = []
 
 # Create DAG
 # para: term_info_list[]
 def create_DAG():
-    G = nx.DiGraph()
-    for term_info in term_info_List:
-
-        pass
     pass
 
 
@@ -121,8 +118,193 @@ def bfs_helper(G, source, target):
                     if w in pred:  # found path
                         return pred, succ, w
 
+    #raise nx.NetworkXNoPath("No path between %s and %s." % (source, target))
+    return []
+
+
+
+def _bidirectional_pred_succ(G, source, target):
+    """Bidirectional shortest path helper.
+
+       Returns (pred, succ, w) where
+       pred is a dictionary of predecessors from w to the source, and
+       succ is a dictionary of successors from w to the target.
+    """
+    # does BFS from both source and target and meets in the middle
+    if target == source:
+        return ({target: None}, {source: None}, source)
+
+    # handle either directed or undirected
+    if G.is_directed():
+        Gpred = G.pred
+        Gsucc = G.succ
+    else:
+        Gpred = G.adj
+        Gsucc = G.adj
+
+    # predecesssor and successors in search
+    pred = {source: None}
+    succ = {target: None}
+
+    # initialize fringes, start with forward
+    forward_fringe = [source]
+    reverse_fringe = [target]
+
+    while forward_fringe and reverse_fringe:
+        if len(forward_fringe) <= len(reverse_fringe):
+            this_level = forward_fringe
+            forward_fringe = []
+            for v in this_level:
+                for w in Gsucc[v]:
+                    if w not in pred:
+                        forward_fringe.append(w)
+                        pred[w] = v
+                    if w in succ:  # path found
+                        return pred, succ, w
+        else:
+            this_level = reverse_fringe
+            reverse_fringe = []
+            for v in this_level:
+                for w in Gpred[v]:
+                    if w not in succ:
+                        succ[w] = v
+                        reverse_fringe.append(w)
+                    if w in pred:  # found path
+                        return pred, succ, w
+
     raise nx.NetworkXNoPath("No path between %s and %s." % (source, target))
 
+
+def has_path(G, source, target):
+    try:
+        nx.shortest_path(G, source, target)
+    except nx.NetworkXNoPath:
+        return False
+    return True
+
+
+def edge_base_sim_helper(term1,term2):
+    path = 0
+    if BP_Graph.has_node(term1) and BP_Graph.has_node(term2):
+        if nx.has_path(BP_Graph, term1, term2):
+            path = nx.shortest_path_length(BP_Graph,term1,term2)
+            if path is None:
+                return 0
+            return 1/(path+1)
+    if MF_Graph.has_node(term1) and MF_Graph.has_node(term2):
+        if nx.has_path(MF_Graph, term1, term2):
+            path = nx.shortest_path_length(MF_Graph,term1,term2)
+            if path is None:
+                return 0
+            return 1/(path+1)
+    else:
+        return 0
+    pass
+
+
+def most_common_ancestor(G,term1,term2):
+    return nx.lowest_common_ancestor(G,term1,term2)
+    pass
+
+
+def best_matching_average(gene0,gene1,term_list0,term_list1):
+    sim_total = 0
+    for term0 in term_list0:
+        #print(term0)
+        for term1 in term_list1:
+            sim = edge_base_sim_helper(term0, term1)
+            if sim is None:
+                sim = 0
+            else:
+                sim_total += sim
+            pass
+        pass
+    return sim_total / (len(term_list0)*len(term_list1)+1)
+    pass
+
+
+def check_node_exist(G,term_list1, term_list2):
+    for term1 in term_list1:
+        if not G.has_node(term1):
+            return False
+            pass
+        pass
+
+    for term2 in term_list2:
+        if not G.has_node(term2):
+            return False
+            pass
+        pass
+
+    return True
+    pass
+
+
+def find_ancestors(G,node):
+    return nx.ancestors(G,node)
+    pass
+
+
+def node_base_sim_helper(term1,term2):
+    pass
+
+
+def node_base_sim(gene0,gene1,term_list0,term_list1):
+    pt1 = set()
+    pt2 = set()
+    for term0 in term_list0:
+        if BP_Graph.has_node(term0):
+            pt1 = pt1 | nx.ancestors(BP_Graph,term0)
+            print(pt1)
+        if MF_Graph.has_node(term0):
+            pt1 = pt1 | nx.ancestors(MF_Graph,term0)
+            print(pt1)
+        else:
+            #print("nope?")
+            continue
+
+    for term1 in term_list1:
+        if BP_Graph.has_node(term1):
+            pt2 = pt2 | find_ancestors(BP_Graph,term1)
+            print(pt2)
+        if MF_Graph.has_node(term1):
+            pt2 = pt2 | find_ancestors(MF_Graph,term1)
+        else:
+            #print("nope?")
+            continue
+
+    if pt1 is None or pt2 is None:
+        return 0
+    else:
+        return len(pt1 & pt2) / (len(pt1 | pt2) + 1)
+    pass
+
+
+def get_gene_label_list():
+    pass
+
+
+def calc_info_content():
+    pass
+
+
+def info_content_sim(gene0,gene1,term_list0,term_list1):
+    pass
+
+
+def integrate_base_sim(gene0,gene1,term_list0,term_list1):
+    pass
+
+
+def my_method_sim():
+    pass
+
+
+def evaluate():
+    pass
+
+
+#lowest_common_ancestor(G, node1, node2, default=None)
 
 # First Scan
 # Construct term
@@ -162,7 +344,7 @@ def child_List():
 def add_parent_helper(child_id, parent_id, parent_list, BP_Flag, MF_Flag, CC_Flag, root_mark):
     if parent_id in BP and BP_Flag:  # add parent only when in the same ontology
         parent_list.append(parent_id)
-        BP_parent.add(parent_id)
+        #BP_parent.add(parent_id)
 
         # construct DAG
         BP_Graph.add_edge(parent_id, child_id)  # parent -> child graph
@@ -170,19 +352,12 @@ def add_parent_helper(child_id, parent_id, parent_list, BP_Flag, MF_Flag, CC_Fla
 
     if parent_id in MF and MF_Flag:  # add parent only when in the same ontology
         parent_list.append(parent_id)
-        MF_parent.add(parent_id)
+        #MF_parent.add(parent_id)
 
         # construct DAG
         MF_Graph.add_edge(parent_id, child_id)
         root_mark = False
 
-    if parent_id in CC and CC_Flag:  # add parent only when in the same ontology
-        parent_list.append(parent_id)
-        CC_parent.add(parent_id)
-
-        # construct DAG
-        CC_Graph.add_edge(parent_id, child_id)
-        root_mark = False
     return root_mark
     pass
 
@@ -219,9 +394,6 @@ def add_parent_child(term_line):
                 MF_Flag = True
                 pass
 
-            if namespace.startswith("cellular_component"):
-                CC_Flag = True
-                pass
 
         if line.startswith("intersection_of: part_of"):
             parent_id = line[25:35]
@@ -238,19 +410,30 @@ def add_parent_child(term_line):
             root_mark = add_parent_helper(child_id, parent_id, parent_list, BP_Flag, MF_Flag, CC_Flag, root_mark)
             pass
 
+    '''''''''
+    gene_label_list = []
+    for GOA_info in GOA_info_list:
+        if child_id == GOA_info.__getitem__("go_term"):
+            gene = GOA_info.__getitem__("gene")
+            #if gene not in gene_label_list:  ## remove duplicate gene annotation
+            gene_label_list.append(gene)
+    
+    term_info = {"id": child_id, "namespace": namespace, "parent": parent_list, "child": child_list, "root_mark": root_mark,
+                 "gene_label_list": gene_label_list}
+    '''
+
     term_info = {"id": child_id, "namespace": namespace, "parent": parent_list, "child": child_list, "root_mark": root_mark}
+
+    # print(term_info)
     # add root to list
     if root_mark and BP_Flag:
         BP_Root_List.append(child_id)
     if root_mark and MF_Flag:
         MF_Root_List.append(child_id)
-    if root_mark and CC_Flag:
-        CC_Root_List.append(child_id)
-
     return term_info
 
 
-def read_input():
+def read_go_obo():
     file = open("go.obo")
     fileStr = file.read()
     termBlock = fileStr.split("[Term]")
@@ -275,8 +458,8 @@ def read_input():
 
 
 # read input and initialize graph
-def read_GOA():
-    inputFile = open("goa_human_small.gaf")
+def read_GOA_human():
+    inputFile = open("goa_human.gaf")
     for line in inputFile.readlines():
         line = line.split()
         if line.__contains__("IEA"):
@@ -290,6 +473,9 @@ def read_GOA():
         go_term = line[3]
         ontology = line[6]  # P C F
         namespace = ""
+
+        add_gene_term_relaton(gene,go_term)
+
         if ontology == "P":  ## add BP
             namespace = "biological_process"
             GOA_info = {"gene": gene, "go_term": go_term, "namespace": namespace}
@@ -304,13 +490,81 @@ def read_GOA():
         pass
 
 
-def annoted_GO():
+def add_gene_term_relaton(gene,go_term):
+    for gene_term_info in Gene_term_list:
+        if gene == gene_term_info.__getitem__("gene"):
+            if go_term not in gene_term_info.__getitem__("go_term"):
+                gene_term_info.__getitem__("go_term").append(go_term)
+                return
+            pass
+    pass
+
+
+def read_biogrid_human_ppi_cin():
+    inputFile = open("ppi_small.txt")
+    for line in inputFile.readlines():
+        line = line.split()
+        gene0 = line[0]
+        gene1 = line[1]
+
+        gene_term_info = {"gene": gene0, "go_term": []}
+        if gene_term_info not in Gene_term_list:
+            Gene_term_list.append(gene_term_info)
+
+        gene_term_info = {"gene": gene1, "go_term": []}
+        if gene_term_info not in Gene_term_list:
+            Gene_term_list.append(gene_term_info)
+
+    pass
+
+
+def print_similarity_reprot():
+    report = open("sim_result.txt", 'w')
+
+    inputFile = open("ppi_small.txt")
+    for line in inputFile.readlines():
+        line = line.split()
+        gene0 = line[0]
+        gene1 = line[1]
+
+        term_list0 = []
+        term_list1 = []
+        for gene_term_info in Gene_term_list:
+            if gene0 == gene_term_info.__getitem__("gene"):
+                term_list0 = gene_term_info.__getitem__("go_term")
+
+            if gene1 == gene_term_info.__getitem__("gene"):
+                term_list1 = gene_term_info.__getitem__("go_term")
+
+        sim1 = 0
+        sim2 = 0
+        sim3 = 0
+        sim4 = 0
+        sim5 = 0
+        #sim1 = best_matching_average(gene0,gene1,term_list0,term_list1)
+        sim2 = node_base_sim(gene0,gene1,term_list0,term_list1)
+        sim3 = info_content_sim(gene0,gene1,term_list0,term_list1)
+        sim4 = integrate_base_sim(gene0,gene1,term_list0,term_list1)
+
+        report.write(gene0 + " " + gene1 + " " + str(sim1) + " " + str(sim2) + " "
+                     + str(sim3) + " " + str(sim4))
+        report.write("\n")
+
+
     pass
 
 
 if __name__ == '__main__':
     #read_input()
-    read_GOA()
+
+    read_biogrid_human_ppi_cin()
+    read_GOA_human()
+    read_go_obo()
+
+    print_similarity_reprot()
+
+    #print(Gene_term_list)
+
     #print(term_info_List)
     #print(BP)
     #print(BP_parent)
