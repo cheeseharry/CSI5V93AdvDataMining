@@ -229,6 +229,7 @@ def _exemplar_of_POS2(sentence, fe_only = True):
 		
 	pass
 
+
 def bipartie_match(frame_name1,frame_name2):
 	G = nx.Graph()#
 
@@ -240,7 +241,6 @@ def bipartie_match(frame_name1,frame_name2):
 			G.add_edge(str1,str2,weight = edge_weight)
 			pass
 		pass
-
 
 	res=nx.max_weight_matching(G, maxcardinality=True, weight='weight')
 	print(str(frame_name1) + "  " + str(frame_name2))

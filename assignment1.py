@@ -1,5 +1,8 @@
 import sys
+import math
 import networkx as nx
+import numpy as np
+from sklearn.metrics import roc_auc_score
 sys.setrecursionlimit(10000000)
 
 BP = set()  # biological_process
@@ -26,7 +29,9 @@ MF_Graph = nx.DiGraph()
 
 GOA_info_list = []
 
-Gene_term_list = []
+Gene_Term_Info_List = []
+
+sim_res_list = []  #similirity result list for 5 method
 
 # Create DAG
 # para: term_info_list[]
@@ -255,10 +260,10 @@ def node_base_sim(gene0,gene1,term_list0,term_list1):
     for term0 in term_list0:
         if BP_Graph.has_node(term0):
             pt1 = pt1 | nx.ancestors(BP_Graph,term0)
-            print(pt1)
+            #print(pt1)
         if MF_Graph.has_node(term0):
             pt1 = pt1 | nx.ancestors(MF_Graph,term0)
-            print(pt1)
+            #print(pt1)
         else:
             #print("nope?")
             continue
@@ -266,7 +271,7 @@ def node_base_sim(gene0,gene1,term_list0,term_list1):
     for term1 in term_list1:
         if BP_Graph.has_node(term1):
             pt2 = pt2 | find_ancestors(BP_Graph,term1)
-            print(pt2)
+            #print(pt2)
         if MF_Graph.has_node(term1):
             pt2 = pt2 | find_ancestors(MF_Graph,term1)
         else:
@@ -280,23 +285,95 @@ def node_base_sim(gene0,gene1,term_list0,term_list1):
     pass
 
 
-def get_gene_label_list():
+def get_info_content_helper(term1,term2):
+    if BP_Graph.has_node(term1) and BP_Graph.has_node(term2):
+        return 2*get_lca_info(term1) / (get_lca_info(term1) + get_lca_info(term2)+1)
+
+    if MF_Graph.has_node(term1) and MF_Graph.has_node(term2):
+        return 2*get_lca_info(term1) / (get_lca_info(term1) + get_lca_info(term2)+1)
+    return 0
     pass
 
 
-def calc_info_content():
+def get_lca_info(term):
+    for term_info in term_info_List:
+        if term_info.__getitem__("id") == term:
+            return len(term_info.__getitem__("parent"))/(len(Gene_Term_Info_List)+1)
+        pass
+    return 0
     pass
 
 
 def info_content_sim(gene0,gene1,term_list0,term_list1):
+    return (len(term_list0)+len(term_list1)) / (len(Gene_Term_Info_List)+1)
     pass
 
 
-def integrate_base_sim(gene0,gene1,term_list0,term_list1):
+def integrate_base_sim(gene0,gene1,term_list0,term_list1,va1,va2):
+    sim = (va1+va2)/2
+    return sim
     pass
 
 
-def my_method_sim():
+def find_ancetor_list(term_list0,term_list1):
+    pt1 = set()
+    pt2 = set()
+    for term0 in term_list0:
+        if BP_Graph.has_node(term0):
+            pt1 = pt1 | nx.ancestors(BP_Graph,term0)
+            #print(pt1)
+        if MF_Graph.has_node(term0):
+            pt1 = pt1 | nx.ancestors(MF_Graph,term0)
+            #print(pt1)
+        else:
+            #print("nope?")
+            continue
+
+    for term1 in term_list1:
+        if BP_Graph.has_node(term1):
+            pt2 = pt2 | find_ancestors(BP_Graph,term1)
+            #print(pt2)
+        if MF_Graph.has_node(term1):
+            pt2 = pt2 | find_ancestors(MF_Graph,term1)
+        else:
+            #print("nope?")
+            continue
+    return pt1,pt2
+    pass
+
+
+def my_method_sim(gene0,gene1,term_list0,term_list1):
+    G = nx.Graph()  #
+    pt1,pt2 = find_ancetor_list(term_list0,term_list1)
+    for term0 in term_list0:
+        for term1 in term_list1:
+            edge_weight = edge_base_sim_helper(term0, term1)
+            if edge_weight is None:
+                edge_weight = 0
+                G.add_edge(term0, term1, weight=edge_weight)
+            else:
+                G.add_edge(term0, term1, weight=edge_weight)
+                pass
+            pass
+        pass
+
+    match_res = nx.max_weight_matching(G, maxcardinality=True, weight='weight')
+    #print(match_res)
+    total_weight = 0
+    for edges in match_res:
+        total_weight += (G[edges[0]][edges[1]]['weight'])  # get edge weight value
+        pass
+
+    return total_weight / (len(match_res)+1)
+    pass
+
+
+def read_human_protein_complexes():
+
+    pass
+
+
+def get_ground_truth():
     pass
 
 
@@ -417,11 +494,13 @@ def add_parent_child(term_line):
             gene = GOA_info.__getitem__("gene")
             #if gene not in gene_label_list:  ## remove duplicate gene annotation
             gene_label_list.append(gene)
-    
-    term_info = {"id": child_id, "namespace": namespace, "parent": parent_list, "child": child_list, "root_mark": root_mark,
-                 "gene_label_list": gene_label_list}
-    '''
 
+    info_content = math.log2(len(gene_label_list) / (len(Gene_Term_Info_List)+1)+1)
+
+    term_info = {"id": child_id, "namespace": namespace, "parent": parent_list, "child": child_list, "root_mark": root_mark,
+                 "gene_label_list": gene_label_list, "info_content": info_content}
+    
+    '''
     term_info = {"id": child_id, "namespace": namespace, "parent": parent_list, "child": child_list, "root_mark": root_mark}
 
     # print(term_info)
@@ -433,6 +512,7 @@ def add_parent_child(term_line):
     return term_info
 
 
+# NO 3 INITIAL depend on GOA_ANNOTATION2
 def read_go_obo():
     file = open("go.obo")
     fileStr = file.read()
@@ -457,6 +537,7 @@ def read_go_obo():
     pass
 
 
+# NO 2 INITIAL
 # read input and initialize graph
 def read_GOA_human():
     inputFile = open("goa_human.gaf")
@@ -491,7 +572,7 @@ def read_GOA_human():
 
 
 def add_gene_term_relaton(gene,go_term):
-    for gene_term_info in Gene_term_list:
+    for gene_term_info in Gene_Term_Info_List:
         if gene == gene_term_info.__getitem__("gene"):
             if go_term not in gene_term_info.__getitem__("go_term"):
                 gene_term_info.__getitem__("go_term").append(go_term)
@@ -500,6 +581,7 @@ def add_gene_term_relaton(gene,go_term):
     pass
 
 
+# NO1 INITIAL
 def read_biogrid_human_ppi_cin():
     inputFile = open("ppi_small.txt")
     for line in inputFile.readlines():
@@ -508,12 +590,12 @@ def read_biogrid_human_ppi_cin():
         gene1 = line[1]
 
         gene_term_info = {"gene": gene0, "go_term": []}
-        if gene_term_info not in Gene_term_list:
-            Gene_term_list.append(gene_term_info)
+        if gene_term_info not in Gene_Term_Info_List:
+            Gene_Term_Info_List.append(gene_term_info)
 
         gene_term_info = {"gene": gene1, "go_term": []}
-        if gene_term_info not in Gene_term_list:
-            Gene_term_list.append(gene_term_info)
+        if gene_term_info not in Gene_Term_Info_List:
+            Gene_Term_Info_List.append(gene_term_info)
 
     pass
 
@@ -529,7 +611,7 @@ def print_similarity_reprot():
 
         term_list0 = []
         term_list1 = []
-        for gene_term_info in Gene_term_list:
+        for gene_term_info in Gene_Term_Info_List:
             if gene0 == gene_term_info.__getitem__("gene"):
                 term_list0 = gene_term_info.__getitem__("go_term")
 
@@ -541,13 +623,18 @@ def print_similarity_reprot():
         sim3 = 0
         sim4 = 0
         sim5 = 0
+        gt = 0 #1 for true, 0 for false
         #sim1 = best_matching_average(gene0,gene1,term_list0,term_list1)
-        sim2 = node_base_sim(gene0,gene1,term_list0,term_list1)
-        sim3 = info_content_sim(gene0,gene1,term_list0,term_list1)
-        sim4 = integrate_base_sim(gene0,gene1,term_list0,term_list1)
+        #sim2 = node_base_sim(gene0,gene1,term_list0,term_list1)
+        #sim3 = info_content_sim(gene0,gene1,term_list0,term_list1)
+        #sim4 = integrate_base_sim(gene0,gene1,term_list0,term_list1,sim1,sim2)
+        sim5 = my_method_sim(gene0,gene1,term_list0,term_list1)
+        gt = get_ground_truth(gene0,gene1,term_list0,term_list1)
 
+        sim_res_dic = {"sim1": sim1, "sim2": sim2, "sim3": sim3,
+                       "sim4": sim4, "sim5": sim5, "gt": gt}
         report.write(gene0 + " " + gene1 + " " + str(sim1) + " " + str(sim2) + " "
-                     + str(sim3) + " " + str(sim4))
+                     + str(sim3) + " " + str(sim4) + " " + str(sim5) + " " + str(gt))
         report.write("\n")
 
 
@@ -563,7 +650,7 @@ if __name__ == '__main__':
 
     print_similarity_reprot()
 
-    #print(Gene_term_list)
+    #print(Gene_Term_Info_List)
 
     #print(term_info_List)
     #print(BP)
