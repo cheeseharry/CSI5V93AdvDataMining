@@ -313,13 +313,32 @@ def get_lca_info(term):
 
 
 def info_content_sim(gene0,gene1,term_list0,term_list1):
+    for term0 in term_list0:
+        for term1 in term_list1:
+            if check_node_exist(BP_Graph,term0,term1):
+                lca = nx.lowest_common_ancestor(BP_Graph,term0,term1)
+            if check_node_exist(MF_Graph,term0,term1):
+                lca = nx.lowest_common_ancestor(MF_Graph,term0,term1)
     return (len(term_list0)+len(term_list1)) / (len(Gene_Term_Info_List)+1)
     pass
 
 
 def integrate_base_sim(gene0,gene1,term_list0,term_list1,va1,va2):
-    sim = (va1+va2)/2
-    return sim
+    for term0 in term_list0:
+        for term1 in term_list1:
+            if check_node_exist(BP_Graph,term0,term1):
+                lca = nx.lowest_common_ancestor(BP_Graph,term0,term1)
+                if lca is None:
+                    return 0
+                else:
+                    return (va1+va2)/2
+            if check_node_exist(MF_Graph,term0,term1):
+                lca = nx.lowest_common_ancestor(MF_Graph,term0,term1)
+                if lca is None:
+                    return 0
+                else:
+                    return (va1+va2)/2
+    return (va1+va2)/2
     pass
 
 
@@ -353,8 +372,8 @@ def find_ancetor_list(term_list0,term_list1):
 def my_method_sim(gene0,gene1,term_list0,term_list1):
     G = nx.Graph()  #
     pt1,pt2 = find_ancetor_list(term_list0,term_list1)
-    for term0 in term_list0:
-        for term1 in term_list1:
+    for term0 in pt1:
+        for term1 in pt2:
             edge_weight = edge_base_sim_helper(term0, term1)
             if edge_weight is None:
                 edge_weight = 0
@@ -533,7 +552,7 @@ def add_parent_child(term_line):
             root_mark = add_parent_helper(child_id, parent_id, parent_list, BP_Flag, MF_Flag, CC_Flag, root_mark)
             pass
 
-    '''''''''
+
     gene_label_list = []
     for GOA_info in GOA_info_list:
         if child_id == GOA_info.__getitem__("go_term"):
@@ -546,8 +565,8 @@ def add_parent_child(term_line):
     term_info = {"id": child_id, "namespace": namespace, "parent": parent_list, "child": child_list, "root_mark": root_mark,
                  "gene_label_list": gene_label_list, "info_content": info_content}
     
-    '''
-    term_info = {"id": child_id, "namespace": namespace, "parent": parent_list, "child": child_list, "root_mark": root_mark}
+
+    #term_info = {"id": child_id, "namespace": namespace, "parent": parent_list, "child": child_list, "root_mark": root_mark}
 
     # print(term_info)
     # add root to list
@@ -649,7 +668,8 @@ def read_biogrid_human_ppi_cin():
 def print_similarity_reprot():
     report = open("sim_result.txt", 'w')
 
-    inputFile = open("biogrid_human_ppi_cln.txt")
+    #inputFile = open("biogrid_human_ppi_cln.txt")
+    inputFile = open("ppi_small.txt")
     for line in inputFile.readlines():
         line = line.split()
         gene0 = line[0]
