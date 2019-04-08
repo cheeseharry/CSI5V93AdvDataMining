@@ -312,6 +312,15 @@ def get_lca_info(term):
     pass
 
 
+def get_lca_info2(term):
+    for term_info in term_info_List:
+        if term_info.__getitem__("id") == term:
+            return term_info.__getitem__("info_content")
+        pass
+    return 0
+    pass
+
+
 def info_content_sim(gene0,gene1,term_list0,term_list1):
     for term0 in term_list0:
         for term1 in term_list1:
@@ -323,7 +332,7 @@ def info_content_sim(gene0,gene1,term_list0,term_list1):
     pass
 
 
-def integrate_base_sim(gene0,gene1,term_list0,term_list1,va1,va2):
+def integrate_base_sim(gene0,gene1,term_list0,term_list1):
     for term0 in term_list0:
         for term1 in term_list1:
             if check_node_exist(BP_Graph,term0,term1):
@@ -331,14 +340,14 @@ def integrate_base_sim(gene0,gene1,term_list0,term_list1,va1,va2):
                 if lca is None:
                     return 0
                 else:
-                    return (va1+va2)/2
+                    return get_lca_info2(lca)
             if check_node_exist(MF_Graph,term0,term1):
                 lca = nx.lowest_common_ancestor(MF_Graph,term0,term1)
                 if lca is None:
                     return 0
                 else:
-                    return (va1+va2)/2
-    return (va1+va2)/2
+                    return get_lca_info2(lca)
+    return 0
     pass
 
 
@@ -560,7 +569,7 @@ def add_parent_child(term_line):
             #if gene not in gene_label_list:  ## remove duplicate gene annotation
             gene_label_list.append(gene)
 
-    info_content = math.log2(len(gene_label_list) / (len(Gene_Term_Info_List)+1)+1)
+    info_content = -math.log2(len(gene_label_list) / (len(Gene_Term_Info_List)+1)+1)
 
     term_info = {"id": child_id, "namespace": namespace, "parent": parent_list, "child": child_list, "root_mark": root_mark,
                  "gene_label_list": gene_label_list, "info_content": info_content}
@@ -648,7 +657,7 @@ def add_gene_term_relaton(gene,go_term):
 
 # NO1 INITIAL
 def read_biogrid_human_ppi_cin():
-    inputFile = open("ppi_small.txt")
+    inputFile = open("biogrid_human_ppi_cln.txt")
     for line in inputFile.readlines():
         line = line.split()
         gene0 = line[0]
@@ -693,7 +702,7 @@ def print_similarity_reprot():
         sim1 = best_matching_average(gene0,gene1,term_list0,term_list1)
         sim2 = node_base_sim(gene0,gene1,term_list0,term_list1)
         sim3 = info_content_sim(gene0,gene1,term_list0,term_list1)
-        sim4 = integrate_base_sim(gene0,gene1,term_list0,term_list1,sim1,sim2)
+        sim4 = integrate_base_sim(gene0,gene1,term_list0,term_list1)
         sim5 = my_method_sim(gene0,gene1,term_list0,term_list1)
         gt = get_ground_truth(gene0,gene1,term_list0,term_list1)
 
