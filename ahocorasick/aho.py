@@ -1,6 +1,4 @@
-import os
 import sys
-import argparse
 
 
 class AhoNode:
@@ -74,6 +72,7 @@ def read_pattern(pattern):
     pattern_list = []
     inputFile = open(pattern)
     for line in inputFile.readlines():
+        line = line.strip()
         pattern_list.append(line)
         pass
 
@@ -81,11 +80,39 @@ def read_pattern(pattern):
     pass
 
 
+def is_text(filename):
+    inputFile = open(filename)
+    num = len(inputFile.readlines())
+
+    if num == 1:
+        return True
+    else:
+        return False
+    pass
+
+
 if __name__ == '__main__':
+    patterns = []
+    text = ""
+
     arglist = sys.argv
-    print(arglist[1])
-    patterns = ['test', 'estes', 'stes']
-    s = "testestest"
+
+    file1 = arglist[1]
+    file2 = arglist[2]
+
+    if is_text(file1):
+        text = read_text(file1)
+        pass
+    else:
+        patterns = read_pattern(file1)
+
+    if is_text(file2):
+        text = read_text(file2)
+        pass
+    else:
+        patterns = read_pattern(file2)
+
+    #print(patterns)
     root = aho_create_statemachine(patterns)
-    aho_find_all(s, root, on_occurence)
+    aho_find_all(text, root, on_occurence)
     pass
