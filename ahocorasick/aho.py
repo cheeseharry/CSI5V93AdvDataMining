@@ -1,63 +1,69 @@
 import sys
 
+report = open("output_Lei.txt", 'w')
 
-class AhoNode:
+
+class AcTrieNode:
     def __init__(self):
         self.goto = {}
-        self.out = []
-        self.fail = None
+        self.child = []
+        self.failure = None
+        pass
 
 
-def aho_create_forest(patterns):
-    root = AhoNode()
-
+def init_Trie(patterns):
+    root = AcTrieNode()
     for path in patterns:
         node = root
         for symbol in path:
-            node = node.goto.setdefault(symbol, AhoNode())
-        node.out.append(path)
+            node = node.goto.setdefault(symbol, AcTrieNode())
+            pass
+        node.child.append(path)
+        pass
     return root
 
 
-def aho_create_statemachine(patterns):
-    root = aho_create_forest(patterns)
+def state_trans(patterns):
+    root = init_Trie(patterns)
     queue = []
     for node in root.goto.values():
         queue.append(node)
-        node.fail = root
+        node.failure = root
+        pass
 
     while len(queue) > 0:
         rnode = queue.pop(0)
-
         for key, unode in rnode.goto.items():
             queue.append(unode)
-            fnode = rnode.fail
+            fnode = rnode.failure
+            pass
             while fnode is not None and key not in fnode.goto.keys():
-                fnode = fnode.fail
-            unode.fail = fnode.goto[key] if fnode else root
-            unode.out += unode.fail.out
-
+                fnode = fnode.failure
+                pass
+            unode.failure = fnode.goto[key] if fnode else root
+            unode.child += unode.failure.child
+            pass
     return root
 
 
-def aho_find_all(s, root, callback):
+def match_pattern(s, root, callback):
     node = root
 
     for i in range(len(s)):
         while node is not None and s[i] not in node.goto.keys():
-            node = node.fail
+            node = node.failure
         if node is None:
             node = root
             continue
         node = node.goto[s[i]]
-        for pattern in node.out:
+        for pattern in node.child:
             callback(i - len(pattern) + 1, pattern)
+            pass
 
 
-############################
-# Demonstration of work
-def on_occurence(pos, patterns):
-    print("At pos %s found pattern: %s" % (pos, patterns))
+def write_ouput(index, patterns):
+    report.write("At index %s found pattern: %s" % (index, patterns))
+    report.write("\n")
     pass
 
 
@@ -112,7 +118,6 @@ if __name__ == '__main__':
     else:
         patterns = read_pattern(file2)
 
-    #print(patterns)
-    root = aho_create_statemachine(patterns)
-    aho_find_all(text, root, on_occurence)
+    root = state_trans(patterns)
+    match_pattern(text, root, write_ouput)
     pass
